@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'Snoopy';
+    src: url(snoopy-font/Snoopy-Xe3K.ttf);
+}
+@font-face {
+    font-family: 'xereta';
+    src: url(groundnut-font/Groundnut-yxPm.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #222;
+
+}
+#cabecalho {
+display: flex;
+grid-area: cabecalho;
+background-color: #ffe24f;
+align-items: center;
+justify-content: center;
+margin: 10px;
+border-radius: 4px;
+padding: 20px;
+font-size: 25px;
+}
+@font-face {
+    font-family: 'Snoopy';
+    src: url(Snoopy-Xe3K.ttf);
+}
+@font-face {
+    font-family: 'xereta';
+    src: url(Groundnut-yxPm.otf);;
+}
+
+
+p {
+    font-family: 'snoopy';
+}
+
+h2 {
+    font-family: 'xereta';
+    background-color: #ffe24f;
+    overflow: hidden;
+    margin: 5px;
+border-radius: 4px;
+text-align: center;
+    
+}
+
+h3 {
+    font-family: 'snoopy';
+}
+
+a {
+    font-family: 'xereta';
+    color: #222;
+}
+
+
+h1 {
+        font-family: 'Snoopy';
+        text-align: center;
+    }
+
+
+#container {
+    display: grid;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "corpo corpo"
+        "rodape rodape";
+    max-width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(215, 232, 249);
+     padding: 10px; 
+}
+#corpo {
+    border: solid #e4e012 2px;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 3px;
+    font-size: 19px;
+    grid-area: corpo;
+}
+
+#corpo img {
+  height: auto;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+#corpo p {
+        margin: 5px;
+}
+
+#corpo h2 {
+    padding: 10px;
+}
+
+.perso {
+    display: grid;
+    grid-template-columns: 20% 70%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "img texto";
+}
+
+.perso img {
+  width: 150px;
+  height: auto;
+}
+
+.img img {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 6px;
+}
+
+.img {
+    grid-area: img;
+}
+
+.texto {
+    grid-area: texto;
+}
+
+#rodape {
+    border: solid #b5a347;
+    background-color: #ffe24f;
+    padding: 10px;
+    overflow: hidden;
+    grid-area: rodape;
+}
+
+
+#box2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media (max-width: 450px) {
+  .perso {
+    grid-template-columns: 1fr;
+    text-align: center;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "texto"
+      "img";
+  }
+
+  .img img {
+    margin: 0;
+  }
+}
+
+

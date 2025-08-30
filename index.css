@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #222;
+
+}
+#cabecalho {
+display: flex;
+grid-area: cabecalho;
+background-color: rgb(255, 226, 79);
+align-items: center;
+justify-content: center;
+margin: 10px;
+border-radius: 4px;
+padding: 20px;
+font-size: 25px;
+
+}
+@font-face {
+    font-family: 'Snoopy';
+    src: url(Snoopy-Xe3K.ttf);
+}
+@font-face {
+    font-family: 'xereta';
+    src: url(Groundnut-yxPm.otf);;
+}
+
+p {
+    font-family: 'Snoopy';
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'xereta';
+    background-color: rgb(255, 226, 79);
+    overflow: hidden;
+    margin: 5px;
+border-radius: 4px;
+    
+}
+
+a {
+    font-family: 'xereta';
+    color: #222;
+}
+
+
+h1 {
+        font-family: 'Snoopy'
+    }
+
+li {
+    font-family: 'snoopy';
+}
+
+
+#container {
+    display: grid;
+    background-color: rgb(206, 229, 250);
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto 2fr auto;
+    grid-template-areas: 
+        "cabecalho cabecalho"
+        "corpo corpo"
+        "rodape rodape";
+     padding: 10px; 
+     gap: 8px;  
+}
+#corpo {
+    border: solid #e4e012 2px;
+    background-color: aliceblue;
+    display: grid;
+    grid-area: corpo;
+    margin: 2px;
+    padding: 20px;
+    text-align: center;
+    gap: 20px;
+    border-radius: 2px;
+    font-size: 19px;
+}
+
+#corpo img {
+  max-width: 90%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 6px;
+}
+
+
+
+#corpo p {
+        margin: 5px;
+}
+
+#corpo h2 {
+    padding: 10px;
+
+}
+
+#rodape {
+    border: solid #b5a347;
+    background-color: #ffe24f;
+    padding: 10px;
+    overflow: hidden;
+    grid-area: rodape;
+}
+
+#box2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+@media (max-width: 450px) {
+  #corpo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    display: none;
+  }
+}
+
+
+
